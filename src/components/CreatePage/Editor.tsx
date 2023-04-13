@@ -7,7 +7,7 @@ const Editor = () => {
   const { title, setTitle, body, setBody } = usePostContext();
   const { menuOpen } = useHome();
 
-  // Define body macros here
+  // BODY MACROS
   const handleBodyChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
     const val = e.target.value;
     if (val.slice(-2) === "$b") {

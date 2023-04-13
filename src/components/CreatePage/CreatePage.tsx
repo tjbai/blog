@@ -32,7 +32,6 @@ const CreatePage = () => {
       <Flex direction="row" minH="100vh" flex={1}>
         <PublishModal />
         <SaveModal />
-
         <Editor />
         <Preview />
       </Flex>

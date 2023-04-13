@@ -20,50 +20,55 @@ const previewTheme = {
       return children;
     }
 
-    if (cand.substring(0, 5) === "$spin") {
-      const split = cand.split("/");
-      const size = split[1],
-        word = split[2];
-      return (
-        <Flex
-          as={motion.div}
-          animation={spinAnimation}
-          padding="2"
-          w="fit-content"
-          fontSize={size}
-          m={10}
-        >
-          {word}
-        </Flex>
-      );
-    } else if (cand.substring(0, 2) === "$l") {
-      const split = cand.split("$");
-      return (
-        <Link isExternal href={split[3]} color="#4e9cf5">
-          {split[2]}
-        </Link>
-      );
-    } else if (cand.substring(0, 2) === "$s" && cand.slice(-2) === "$d") {
-      const split = cand.split("$");
-      return (
-        <Flex mt={5}>
-          <Spotify wide link={split[2]} />
-        </Flex>
-      );
-    } else if (cand.substring(0, 2) === '$"') {
-      const text = cand.split('"')[1];
-      return (
-        <Text bg="midbg" fontStyle="italic" p={2} mb={5}>
-          "{text}"
-        </Text>
-      );
-    } else if (cand.substring(0, 1) === "$") {
-      return (
-        <Text textStyle="t2" mb={2}>
-          {children[0].substring(1)}
-        </Text>
-      );
+    try {
+      if (cand.substring(0, 5) === "$spin") {
+        const split = cand.split("/");
+        const size = split[1],
+          word = split[2];
+        return (
+          <Flex
+            as={motion.div}
+            animation={spinAnimation}
+            padding="2"
+            w="fit-content"
+            fontSize={size}
+            m={10}
+          >
+            {word}
+          </Flex>
+        );
+      } else if (cand.substring(0, 2) === "$l") {
+        const split = cand.split("$");
+        return (
+          <Link isExternal href={split[3]} color="#4e9cf5">
+            {split[2]}
+          </Link>
+        );
+      } else if (cand.substring(0, 2) === "$s" && cand.slice(-2) === "$d") {
+        const split = cand.split("$");
+        return (
+          <Flex mt={5}>
+            <Spotify wide link={split[2]} />
+          </Flex>
+        );
+      } else if (cand.substring(0, 2) === '$"') {
+        const text = cand.split('"')[1];
+        return (
+          <Text bg="midbg" fontStyle="italic" p={2} mb={5}>
+            "{text}"
+          </Text>
+        );
+      } else if (cand.substring(0, 1) === "$") {
+        return (
+          <Text textStyle="t2" mb={2}>
+            {children[0].substring(1)}
+          </Text>
+        );
+      }
+    } catch (e) {
+      alert("ERROR");
     }
+
     return <Text>{children}</Text>;
   },
 };

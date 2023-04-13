@@ -2,7 +2,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import theme from "./chakra/theme";
 import "@fontsource/azeret-mono/400.css";
 
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { QueryClient, QueryClientProvider } from "react-query";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -17,6 +17,8 @@ import Root from "./components/Root";
 import HomeProvider from "./components/HomeProvider";
 import SubscribePage from "./components/SubscribePage";
 import IndividualPostPage from "./components/IndividualPostPage";
+import NewPage from "./components/NewPage";
+import { loader as newPageLoader } from "./components/NewPage/NewPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,6 +27,7 @@ const router = createBrowserRouter(
       <Route path="create" element={<CreatePage />} />
       <Route path=":postID" element={<IndividualPostPage />} />
       <Route path="subscribe" element={<SubscribePage />} />
+      <Route path="new" element={<NewPage />} loader={newPageLoader} />
     </Route>
   )
 );
