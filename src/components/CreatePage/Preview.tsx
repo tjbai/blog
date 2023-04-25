@@ -58,6 +58,8 @@ const previewTheme = {
             "{text}"
           </Text>
         );
+      } else if (cand.substring(0, 3) === "$br") {
+        return <Flex border="1px solid grey" mt={5} />;
       } else if (cand.substring(0, 1) === "$") {
         return (
           <Text textStyle="t2" mb={2}>
