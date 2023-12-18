@@ -4,7 +4,7 @@ import { BiTime } from "react-icons/bi";
 import { FaBookmark, FaEye } from "react-icons/fa";
 import { FiSend, FiTrash2 } from "react-icons/fi";
 import { ImHome } from "react-icons/im";
-import { MdAddBox } from "react-icons/md";
+import { MdAddBox, MdLabelOutline } from "react-icons/md";
 import { RiEditBoxLine, RiSave3Fill } from "react-icons/ri";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../AuthProvider/AuthProvider";
@@ -27,6 +27,7 @@ const Sidebar = () => {
     verboseDates,
     menuOpen,
     setMenuOpen,
+    setLabelsOn,
   } = useHome();
   const location = useLocation();
   const navigate = useNavigate();
@@ -85,6 +86,12 @@ const Sidebar = () => {
         )}
 
         <Hicon as={BiTime} onClick={() => setVerboseDates(!verboseDates)} />
+        <Hicon
+          as={MdLabelOutline}
+          onClick={() => {
+            setLabelsOn((p) => !p);
+          }}
+        />
         <Hicon as={FaBookmark} onClick={() => navigate("/subscribe")} />
       </>
     );

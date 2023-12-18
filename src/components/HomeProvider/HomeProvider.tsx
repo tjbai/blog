@@ -1,4 +1,11 @@
-import { createContext, ReactNode, useContext, useState } from "react";
+import {
+  createContext,
+  Dispatch,
+  ReactNode,
+  SetStateAction,
+  useContext,
+  useState,
+} from "react";
 
 export interface PostType {
   title: string;
@@ -6,15 +13,20 @@ export interface PostType {
   createdDate: string;
   key: string;
   state: "published" | "draft";
+  labels?: string[];
 }
 
 interface SelectedPostInterface {
   selectedPost: PostType | null;
   setSelectedPost: (val: PostType | null) => void;
   verboseDates: boolean;
-  setVerboseDates: (val: boolean) => void;
+  setVerboseDates: Dispatch<SetStateAction<boolean>>;
   menuOpen: boolean;
-  setMenuOpen: (val: boolean) => void;
+  setMenuOpen: Dispatch<SetStateAction<boolean>>;
+  labelsOn: boolean;
+  setLabelsOn: Dispatch<SetStateAction<boolean>>;
+  filter: string;
+  setFilter: Dispatch<SetStateAction<string>>;
 }
 
 const SelectedPostContext = createContext({} as SelectedPostInterface);
@@ -22,7 +34,9 @@ const SelectedPostContext = createContext({} as SelectedPostInterface);
 const HomeProvider = ({ children }: { children: ReactNode }) => {
   const [selectedPost, setSelectedPost] = useState<PostType | null>(null);
   const [verboseDates, setVerboseDates] = useState(false);
+  const [labelsOn, setLabelsOn] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [filter, setFilter] = useState("");
 
   return (
     <SelectedPostContext.Provider
@@ -33,6 +47,10 @@ const HomeProvider = ({ children }: { children: ReactNode }) => {
         setVerboseDates,
         menuOpen,
         setMenuOpen,
+        labelsOn,
+        setLabelsOn,
+        filter,
+        setFilter,
       }}
     >
       {children}

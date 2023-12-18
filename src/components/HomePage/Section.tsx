@@ -1,6 +1,6 @@
-import { Flex } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 import { Val } from "react-firebase-hooks/database/dist/database/types";
-import { PostType } from "../HomeProvider/HomeProvider";
+import { PostType, useHome } from "../HomeProvider/HomeProvider";
 import Post from "./Post";
 
 const Section = ({
@@ -24,21 +24,10 @@ const Section = ({
 
   return (
     <Flex direction="column" justify="flex-start">
-      <Flex
-        width="100%"
-        fontSize={{ base: "15px", lg: "20px" }}
-        fontWeight="600"
-        px={3}
-        bg="darkbg"
-        color="bg"
-        py={1}
-      >
-        {title}
-      </Flex>
       <Flex direction="column-reverse">
-        {posts?.map((post) => (
-          <Post key={post.key} post={post} />
-        ))}
+        {posts?.map((post) => {
+          return <Post key={post.key} post={post} />;
+        })}
       </Flex>
     </Flex>
   );
