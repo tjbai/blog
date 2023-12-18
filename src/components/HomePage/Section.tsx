@@ -27,7 +27,7 @@ const Section = ({
       <Flex
         width="100%"
         fontSize={{ base: "15px", lg: "20px" }}
-        fontWeight="bold"
+        fontWeight="600"
         px={3}
         bg="darkbg"
         color="bg"

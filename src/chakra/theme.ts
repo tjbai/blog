@@ -8,16 +8,16 @@ const theme = extendTheme({
     darkbg: "#161616",
   },
   fonts: {
-    body: "Azeret Mono",
+    body: "Azeret Mono Variable",
   },
   textStyles: {
     t1: {
-      fontSize: "27.5px",
-      fontWeight: "bold",
+      fontSize: "28px",
+      fontWeight: "600",
     },
     t2: {
       fontSize: "25px",
-      fontWeight: "bold",
+      fontWeight: "600",
     },
     b1: {
       fontSize: "20px",

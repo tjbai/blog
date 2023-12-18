@@ -6,6 +6,7 @@
     "@chakra-ui/react": "^2.4.9",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@fontsource-variable/azeret-mono": "^5.0.19",
     "@fontsource/azeret-mono": "^4.5.12",
     "@tanstack/react-query": "^4.22.0",
     "@types/jest": "^28.1.8",

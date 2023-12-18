@@ -56,10 +56,11 @@ const Post = ({ post }: { post: PostType }) => {
       <Flex direction="row" align="center" justify="space-between">
         <Box
           fontSize={{ base: "12px", lg: "15px" }}
-          fontWeight="bold"
+          fontWeight="600"
           textOverflow="ellipsis"
           overflow="hidden"
           whiteSpace="nowrap"
+          css={{ "-webkit-font-smoothing": "antialiased" }}
         >
           {selectedPost?.key === post.key ? "*" + post.title + "*" : post.title}
         </Box>

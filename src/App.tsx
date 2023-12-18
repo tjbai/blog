@@ -1,6 +1,7 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import theme from "./chakra/theme";
-import "@fontsource/azeret-mono/400.css";
+// import "@fontsource/azeret-mono/400.css";
+import "@fontsource-variable/azeret-mono";
 
 import { QueryClient, QueryClientProvider } from "react-query";
 import {
