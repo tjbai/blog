@@ -27,6 +27,8 @@ const Menu = () => {
       direction="column"
       flex={1}
       maxW={{ base: "100%", md: "30%" }}
+      maxH="100vh"
+      overflow="scroll"
       display={{ base: menuOpen ? "flex" : "none", md: "flex" }}
     >
       <Login />
