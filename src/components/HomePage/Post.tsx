@@ -1,4 +1,4 @@
-import { Box, Collapse, Fade, Flex, HStack, Text } from "@chakra-ui/react";
+import { Box, Collapse, Flex, HStack, Text } from "@chakra-ui/react";
 import moment from "moment";
 import { prettifyDate } from "../../constants/utils";
 import { useAuth } from "../AuthProvider/AuthProvider";

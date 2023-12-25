@@ -2,9 +2,17 @@ import { Flex, Icon } from "@chakra-ui/react";
 import { FiBookOpen } from "react-icons/fi";
 import Preview from "../CreatePage/Preview";
 import { useHome } from "../HomeProvider/HomeProvider";
+import { useEffect } from "react";
 
 const Reader = () => {
   const { selectedPost, menuOpen } = useHome();
+
+  useEffect(() => {
+    if (!selectedPost) return;
+    const element = document.getElementById(`${selectedPost.title}-id`);
+    if (!element) return;
+    element.scrollIntoView({ behavior: "smooth" });
+  }, [selectedPost]);
 
   if (!selectedPost) {
     return (

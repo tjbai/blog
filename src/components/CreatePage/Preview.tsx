@@ -91,6 +91,7 @@ const Preview = ({ post }: { post?: PostType }) => {
       display={{ base: menuOpen ? "none" : "flex", md: "flex" }}
     >
       <Flex direction="column" maxW="700px" height="100%">
+        <Flex id={`${post?.title}-id`} position="relative" top="-20px" />
         <Flex
           direction="column"
           mb={5}
