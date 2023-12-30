@@ -9,6 +9,8 @@ import {
   IconLambda,
   IconMath,
   IconSchool,
+  IconFlipVertical,
+  IconBooks,
 } from "@tabler/icons-react";
 import { useHome } from "../HomeProvider/HomeProvider";
 
@@ -25,6 +27,8 @@ export default function Tag({ label }: { label: string }) {
       PL: IconLambda,
       Math: IconMath,
       School: IconSchool,
+      Reading: IconBooks,
+      Meta: IconFlipVertical,
     };
 
     const res = iconMap[l];

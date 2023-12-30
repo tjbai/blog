@@ -94,7 +94,7 @@ const Post = ({ post }: { post: PostType }) => {
             marginTop={{ base: "2px", lg: "5px" }}
             spacing={{ base: 1, lg: 2 }}
           >
-            {post.labels.map((l) => (
+            {post.labels.sort().map((l) => (
               <Tag label={l} />
             ))}
           </HStack>
