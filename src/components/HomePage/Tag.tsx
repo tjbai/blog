@@ -12,6 +12,7 @@ import {
   IconFlipVertical,
   IconBooks,
   IconBrandCashapp,
+  IconTestPipe,
 } from "@tabler/icons-react";
 import { useHome } from "../HomeProvider/HomeProvider";
 
@@ -31,6 +32,7 @@ export default function Tag({ label }: { label: string }) {
       Reading: IconBooks,
       Meta: IconFlipVertical,
       Career: IconBrandCashapp,
+      Research: IconTestPipe
     };
 
     const res = iconMap[l];
