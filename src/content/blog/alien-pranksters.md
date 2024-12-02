@@ -34,9 +34,9 @@ Problem (1) was solved quickly when we realized that we needed a robust way to v
 
 This new information tells everyone else with a copy of the sheet that Will _must have_ agreed to sign off on the transaction, otherwise why would he have taken that selfie? When rows are added without a selfie or the selfie doesn't look like the sender, they're thrown away.
 
-Problem (2) had an even simpler solution—we just turned off all delete permissions on the ledger. Sure, annoyance is guaranteed but it's a relatively small price to pay for true safety. After all, we expect people to be careful with the stakes at hand.
+Problem (2) had an even simpler solution—we just turned off all delete permissions on the ledger. Annoyance is guaranteed but it's a relatively small price to pay for true safety. After all, we expect people to be careful with the stakes at hand.
 
-Having addressed these limitations, our new fangled system seems nearly perfect. The humble ledger slowly engorges Baltimore, then the entire East Coast, and eventually all of North America. Taking a step back, we realize that our humble solution to navigating the alien apocalypse somehow became a fucking global _currency_.
+Having addressed these limitations, our new fangled system seems nearly perfect. The humble ledger slowly engorges Baltimore, then the entire East Coast, and eventually all of North America. Taking a step back, we realize that our humble solution to navigating the alien apocalypse somehow became a whole ass global _currency_.
 
 Of course, things don't stay rosy forever. As table stakes grow to truly global scale, we're forced to confront some unfortunate truths.
 
