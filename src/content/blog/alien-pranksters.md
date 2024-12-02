@@ -28,7 +28,7 @@ Fast forward a few years, and the entire Hopkins community—students, faculty, 
 
 We're getting ahead of ourselves. In the process of hitting fast forward we glossed over a few crucial improvements that allowed our protocol to maintain its integrity. After all, we've yet to address humanity's age-old plague—people trying to game the system. Two critical issues emerged:
 1. What's stopping me from just writing "Will owes TJ $1,000,000?"
-2. What will notice if I delete a year-old row saying "TJ owes Alek $10?"
+2. Who will notice if I delete a year-old row saying "TJ owes Alek $10?"
 
 Problem (1) was solved quickly when we realized that we needed a robust way to verify that each transaction was actually intended by the debtor. After putting our heads together, we developed a clever solution: each row of the ledger must not only record the transaction details, but also attach a selfie of the debtor holding up the transaction details and today's newspaper (I forgot to mention the aliens also destroyed all deepfake and photoshop technology).
 
