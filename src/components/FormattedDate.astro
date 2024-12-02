@@ -1,0 +1,25 @@
+---
+interface Props {
+   date: Date;
+   verbose?: boolean;
+}
+const { date, verbose = false } = Astro.props;
+
+const dateOptions = {
+   year: 'numeric', 
+   month: 'short',
+   day: 'numeric',
+   ...(verbose && {
+   	hour: 'numeric',
+   	minute: 'numeric'
+   })
+} as const;
+
+---
+<time datetime={date.toISOString()}>
+   {
+   	date.toLocaleDateString('en-us', dateOptions)
+   }
+</time>
+	</body>
+</html>
