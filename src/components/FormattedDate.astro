@@ -4,22 +4,18 @@ interface Props {
    verbose?: boolean;
 }
 const { date, verbose = false } = Astro.props;
-
 const dateOptions: Intl.DateTimeFormatOptions = {
    year: 'numeric',
    month: 'short',
-   day: 'numeric',
+   day: '2-digit',
    ...(verbose && {
-   	hour: 'numeric',
-   	minute: 'numeric'
+      hour: 'numeric',
+      minute: 'numeric'
    })
 };
-
 ---
 <time datetime={date.toISOString()}>
    {
-   	date.toLocaleDateString('en-us', dateOptions)
+      date.toLocaleDateString('en-us', dateOptions)
    }
 </time>
-	</body>
-</html>
