@@ -5,15 +5,15 @@ interface Props {
 }
 const { date, verbose = false } = Astro.props;
 
-const dateOptions = {
-   year: 'numeric', 
+const dateOptions: Intl.DateTimeFormatOptions = {
+   year: 'numeric',
    month: 'short',
    day: 'numeric',
    ...(verbose && {
    	hour: 'numeric',
    	minute: 'numeric'
    })
-} as const;
+};
 
 ---
 <time datetime={date.toISOString()}>
