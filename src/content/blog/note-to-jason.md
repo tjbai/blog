@@ -6,7 +6,7 @@ pubDate: 2024-12-12 16:37
 
 _I sent the following note to my research advisor this afternoon. As context, I'd previously taken a roughly month long hiatus from research._
 
-So for the better part of the summer and this semester, I've been focused on trying to get Evolver to perform competitively on standard datasets like WMT-14. I was initially bullish on this direction after getting decent results on small/toy datasets. There many parts of our design that seem promising: deep-shallow encoder-decoder, deep encodings between diffusion steps, etc. This led me to spend a lot of time on trying different datasets, engineering tweaks, exploring training schemes, etc.
+So for the better part of the summer and this semester, I've been focused on trying to get Evolver to perform competitively on standard datasets like WMT-14. I was initially bullish on this direction after getting decent results on small/toy datasets. There's many parts of our design that seem promising: deep-shallow encoder-decoder, deep encodings between diffusion steps, etc. This led me to spend a lot of time on trying different datasets, engineering tweaks, exploring training schemes, etc.
 
 After taking time off and coming back to this with fresh eyes, I realize I might have been hill-climbing in a local minimum rather than thinking about the more fundamental aspects of the design. I'm reminded of Plato's allegory of the cave 😊.
 
