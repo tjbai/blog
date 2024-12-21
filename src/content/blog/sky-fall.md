@@ -18,7 +18,7 @@ At lunch, coworkers make conversation about current events, treading carefully a
 
 As the winter months come around, you start feeling the characteristic seasonal depression rear its ugly head. You finally decide to splurge on one of those fancy UV lamps—the metal skydome they installed last month has been making it hard to get enough sunlight. Your therapist said it's important to practice self-care.
 
-Just weeks later, you're pissed to find an evacuation notice plastered on the front door. You weren't supposed to be due for another 6 months, at least! As you pack your things into the 3 allotted cardboard boxes, you realize you forgot to renew your damned celestial collapse policy last week. The email got buried between some LinkedIn requests and a few DoorDash promos.
+Just weeks later, you're pissed to find an evacuation notice plastered on the front door. You weren't supposed to be due for another 6 months, at least! As you pack your things into the 3 allotted cardboard boxes, you realize you forgot to renew your damned celestial collapse policy last week. The email got buried between some LinkedIn requests and DoorDash promos.
 
 In line to check in to the designated bunker, people can't help but make small talk.
 
