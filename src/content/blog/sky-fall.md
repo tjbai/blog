@@ -6,7 +6,7 @@ pubDate: 2024-12-20 22:50
 
 The light turns green but your car doesn't move. Through the windshield, you watch a piece of sky, still foggy with yesterday's clouds, tear loose and crater right between a minivan and a truck three cards ahead. Morning commuters lean on their horns as they wind their way around the obstacle. You'll be late to work again.
 
-By the following Wednesday, the weather report had been updated to include "smatterings of atmospheric decomposition." You pull a dusty bike out of the closet since the pickup trucks still haven't cleared the debris blocking the exit to the parking garage. Looking at the forecast, you grab an umbrella too.
+By the following Wednesday, the weather report has been updated to include "smatterings of atmospheric decomposition." You pull a dusty bike out of the closet since the pickup trucks still haven't cleared the debris blocking the exit to the parking garage. Looking at the forecast, you grab an umbrella too.
 
 At lunch, coworkers make conversation about current events, treading carefully around topics that are too political for the office.
 
