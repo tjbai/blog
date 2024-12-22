@@ -22,7 +22,7 @@ Standing in line to board my flight home, I habitually pulled out my phone to do
 
 **WTF.**
 
-At 30,000 feet, I watched my world crumble. The numbers were an existential threat to the part of me, the part of us all, that wanted to think that *nothing ever happens*. I combed through my beliefs and goals, tearing them down to be built anew. How had I been so wrong, so grossly miscalibrated?
+At 30,000 feet, I watched my world crumble. The numbers were an existential threat to the part of me, the part of us all, that wants to believe that *nothing ever happens*. I combed through my beliefs and goals, tearing them down to be built anew. How had I been so wrong, so grossly miscalibrated?
 
 Still reeling when I got home, I wrote [yesterday's post](sky-fall). Shklovsky talked about the role of art in _defamiliarization_. We struggle to see our own experiences, faults and all, precisely because they're ours, because they're everything we've ever known. When we question those boundaries, looking at the familiar through new eyes, we see things never seen before.
 
