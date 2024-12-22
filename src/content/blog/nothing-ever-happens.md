@@ -16,7 +16,7 @@ I tried to write a decent amount back then and profess to those who would listen
 
 I spent the following summer blowing off work, skimming arXiv, and talking to LLMs. I took a few courses in the fall which affirmed my interest and then joined Jason's lab the next semester. In the year that passed, my excitement didn't dim so much as it just matured.
 
-Things tended to move just as quickly, but the further upstream I ventured, the less surprising downstream currents became. Updates to my worldview became more frequent but smaller in magnitude. I settled into a rigid certainty about where we stood and where we were headed. I was comfortable. **Then yesterday happened.**
+Things still moved quickly, but the further upstream I ventured, the less surprising downstream currents became. Updates to my worldview became more frequent but smaller in magnitude. I settled into a rigid certainty about where we stood and where we were headed. I was comfortable. **Then yesterday happened.**
 
 Standing in line to board my flight home, I habitually pulled out my phone to doomscroll Twitter. My feed was flush with live reactions to o3. *88% on ARC-AGI. 25% on frontier math.* My hand froze as I stared at the same two charts. *88% on ARC-AGI. 25% on frontier math*.
 
