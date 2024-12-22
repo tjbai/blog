@@ -12,7 +12,7 @@ The following spring, I skipped class to attend a CLSP talk by Karthik Narasimha
 
 Both times, I felt a deeply confusing, potent mix of excitement and dread settle in my chest. I was amazed by the speed and direction of new developments, but unsettled by how quickly the future seemed to be racing away from me. I had no choice but to catch up, or risk being left behind.
 
-I tried to write a decent amount back then and profess to who would listen: *Look! Look at what's happening! Look at where we're going! Please, just look!* Of course, in time, that awareness would diffuse from academics to enthusiasts, to early adopters, and eventually the general public. But, watching that slow spread was infuriating. How could people seem so oblivious to the world changing around us, *right now?*
+I tried to write a decent amount back then and profess to those who would listen: *Look! Look at what's happening! Look at where we're going! Please, just look!* Of course, in time, that awareness would diffuse from academics to enthusiasts, to early adopters, and eventually the general public. But, watching that slow spread was infuriating. How could people seem so oblivious to the world changing around us, *right now?*
 
 I spent the following summer blowing off work, skimming arXiv, and talking to LLMs. I took a few courses in the fall which affirmed my interest and then joined Jason's lab the next semester. In the year that passed, my excitement didn't dim so much as it just matured.
 
