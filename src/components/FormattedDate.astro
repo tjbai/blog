@@ -4,18 +4,49 @@ interface Props {
    verbose?: boolean;
 }
 const { date, verbose = false } = Astro.props;
-const dateOptions: Intl.DateTimeFormatOptions = {
-   year: 'numeric',
-   month: 'short',
-   day: '2-digit',
+
+const verboseOptions: Intl.DateTimeFormatOptions = {
    ...(verbose && {
       hour: 'numeric',
       minute: 'numeric'
    })
 };
+
+const desktopOptions: Intl.DateTimeFormatOptions = {
+   year: 'numeric',
+   month: 'short',
+   day: '2-digit',
+   ...verboseOptions
+};
+
+const mobileOptions: Intl.DateTimeFormatOptions = {
+   year: 'numeric',
+   month: '2-digit',
+   day: '2-digit',
+   ...verboseOptions
+};
 ---
+
 <time datetime={date.toISOString()}>
-   {
-      date.toLocaleDateString('en-us', dateOptions)
-   }
+   <span class="desktop-date">
+      {date.toLocaleDateString('en-us', desktopOptions)}
+   </span>
+   <span class="mobile-date">
+      {date.toLocaleDateString('en-us', mobileOptions)}
+   </span>
 </time>
+
+<style>
+   .mobile-date {
+      display: none;
+   }
+
+   @media (max-width: 720px) {
+      .desktop-date {
+         display: none;
+      }
+      .mobile-date {
+         display: inline;
+      }
+   }
+</style>
