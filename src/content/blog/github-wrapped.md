@@ -47,7 +47,7 @@ pubDate: 2025-01-03 14:34
     font-weight: 500;
 }
 
-.type-added {
+.type-research {
     background-color: #dbeafe;
     color: #1e40af;
 }
@@ -98,9 +98,20 @@ I wrote a decent amount of code this year:
 
 ![GitHub Contributions](../../images/contributions-2024.png)
 
-I was curious to see a breakdown of all that activity, so I got to work last night with a Jupyter REPL and Claude in hand. Frustratingly, I was only able to recover 1062/1412 contributions through the API alone, and wasn't able to debug a several hundred commit discrepancy from the over the summer.
+I was curious to see a breakdown of all that activity, so I got to work last night with a Jupyter REPL and Claude in hand. Frustratingly, I was only able to recover 1062/1412 contributions through the API alone, and wasn't able to debug a several hundred commit discrepancy from the over the summer. Whatever.
 
-Whatever. Also, if you're expecting more pretty pictures like the one above, then you'll be disappointed. This isn't that type of blog. So, without further ado, my __2024 GitHub Wrapped__.
+Also, if you're expecting more pretty pictures like the one above, then you'll probably be disappointed. This isn't that type of blog. Without further ado, my 2024 GitHub Wrapped!
+* __[By The Numbers](#by-the-numbers)__
+  * [Commits by Repository (>1%)](#commits-by-repository-1)
+* __[Work Patterns](#work-patterns)__
+  * [Commits by Month](#commits-by-month)
+  * [Commits by Day](#commits-by-day)
+* __[Under The Hood](#under-the-hood)__
+  * [Commits By Programming Language](#commits-by-programming-language)
+  * [Commits By Configuration Language](#commits-by-configuration-language)
+  * [The Whole Kitchen Sink (>100 lines)](#the-whole-kitchen-sink-100-lines)
+* __[Commit Poetry](#poetry)__
+  * [Most Frequent Tokens](#most-frequent-tokens)
 
 ## By The Numbers
 
@@ -185,9 +196,9 @@ Whatever. Also, if you're expecting more pretty pictures like the one above, the
     </table>
 </div>
 
-Unsurprisingly, the top of this list is dominated by some private research repositores (evolver, ddm, argo) along with a couple course projects from this past semester (avlm, llmr). Collectively, those repos are exclusively language model-related research projects. Sign of the times.
+Unsurprisingly, the top of this list is dominated by private research repos (evolver, ddm, argo) along with a couple course projects from this past semester (avlm, llmr). Collectively, these are exclusively language model-related research projects—quite a shift from just over a year ago when I was posting things like [PyTorch is Not Pleasant](https://blog.tjbai.com/pytorch-is-not-pleasant). Sign of the times.
 
-Past that, there's a steep fall off and the rest is a mix of random homework repos (bstat, cogai, cv) or personal websites/productivity tools (blog, front, ji). It's funny to see my [Advent of Code](https://en.wikipedia.org/wiki/Advent_of_Code) repo (aoc) in 6th place, considering all those commits were exclusively made during a 2-3 week period at the start of December.
+Past that, there's a steep fall off and the rest is a mix of random homework repos (bstat, cogai, cv) or personal websites/productivity tools (blog, front, ji). It's funny to see my Advent of Code repo (aoc) in 6th place, considering all those commits came from a 2-3 week period at the start of December.
 
 ## Work Patterns
 
@@ -195,13 +206,14 @@ Past that, there's a steep fall off and the rest is a mix of random homework rep
 
 ![Monthly Breakdown](../../images/month_breakdown.png)
 
-There was a steady ramp-up last spring as I got deeper into a project with Jason, interrupted by a steep drop-off near finals, followed by a couple grindy months double-timing work and research in Austin, right into a predictably heavy burnout this past fall. I did manage to get my swagger back to close out the year though between Advent of Code, course projects, and getting back into research.
+I love this chart. My activity steadily ramped up last spring as I got deeper into a project with Jason, briefly dipped during finals in May, then came back during a couple of intense months in Austin where I was juggling both work and research.
+Coming back to school, I immediately got really burnt out for pretty much the entire fall, exacerbated by a bad case of "signed an offer letter"-itis. I did manage to get my swagger back to close out the year though between Advent of Code, final projects, and getting back into research.
 
 ### Commits by Day
 
 ![Daily Breakdown](../../images/weekday_breakdown.png)
 
-I love this chart. I always attack the week with a full head of steam, regress to my normal levels of productivity mid-week, and then take a couple days of "deserving" rest. Evidently, the Sunday Scaries are enough to jump start me back into motion.
+The trend here is really funny to me too. I come into each Monday with a full head of steam, regress to my normal levels of productivity mid-week, then take a couple days of "deserving" rest. Eventually, the Sunday scaries come around to jump start me back into motion.
 
 ## Under The Hood
 
@@ -211,9 +223,9 @@ I love this chart. I always attack the week with a full head of steam, regress t
     <table class="repo-table">
         <thead>
             <tr>
-                <th>Extension</th>
-                <th>Added</th>
-                <th>Removed</th>
+                <th>File Extension</th>
+                <th>Lines Added</th>
+                <th>Lines Removed</th>
             </tr>
         </thead>
         <tbody>
@@ -246,9 +258,11 @@ I love this chart. I always attack the week with a full head of steam, regress t
     </table>
 </div>
 
-In 2024 I wrote a lot of... Python. I remarked to a friend last spring that my familiarity with this language probably qualified me as trilingual. In the year since, nothing's really changed, and there really isn't a better option/lesser evil than Python for all my research work.
+In 2024 I wrote a lot of... Python. I remarked to a friend last spring that using this language is like speaking English at this point. In the year since, nothing's really changed and there really isn't a better option/lesser evil than for all my research work. If we account for all the lost commits and notebook development (.ipynb), I'm probably over 100k lines changed on the year.
 
-At least 90% of the Bash I wrote was autogenerated to queue SLURM jobs on various supercomputers. I picked up Scala late in the year during Advent of Code as a new challenge and because it's the language of choice at my future employer. 100% of the Matlab and R code was against my will for miscellaneous classwork.
+I did at least pick up Scala late in the year during Advent of Code for a change of scenery and because it's the language of choice at my future employer. Plus, I probably wrote around 10,000 lines of Java over the summer at work. The _most_ shocking part is that I committed exactly 0 lines of JavaScript to any of my websites, including a complete rewrite of this one.
+
+At least 90% of the Bash was autogenerated to queue SLURM jobs on various supercomputers and 100% of the Matlab and R code was written against my will for various homework assignments. We are definitely leaving proprietary scientific computing languages in 2024.
 
 ### Commits By Configuration Language
 
@@ -256,9 +270,9 @@ At least 90% of the Bash I wrote was autogenerated to queue SLURM jobs on variou
     <table class="repo-table">
         <thead>
             <tr>
-                <th>Extension</th>
-                <th>Added</th>
-                <th>Removed</th>
+                <th>File Extension</th>
+                <th>Lines Added</th>
+                <th>Lines Removed</th>
             </tr>
         </thead>
         <tbody>
@@ -286,17 +300,21 @@ At least 90% of the Bash I wrote was autogenerated to queue SLURM jobs on variou
     </table>
 </div>
 
-This really isn't a fair comparison because >90% of that JSON comes from constant paranoid data dumps for fear of losing reproducibility. I _did_ use it as my plain-text config format of choice for most of the year, but eventually shifted over to YAML because of improved ergonomics like being able to write comments. Almost all of the TOML can be attributed to autogenerated `pyproject.toml` files as a result of recently adopting `uv` as my package manager of choice.
+This comparison isn't entirely fair, since a sizeable portion of that JSON came from paranoid data collection during extended experiments, driven by fear of losing reproducibility.
 
-### The Whole Kitchen Sink (>100 lines)
+Past that, I used JSON quite a bit to manage and version control training/model hyperparameters separately from the source code.
+Since the end of the summer I've transitioned entirely to YAML because of its massively improved ergonomics, like in-line commenting.
+All the TOML is a byproduct of recently adopting [uv](https://docs.astral.sh/uv/), which uses `pyproject.toml`, as my package manager of choice.
+
+### The Whole Kitchen Sink (>100 Lines Changed)
 
 <div class="repo-table-container">
     <table class="repo-table">
         <thead>
             <tr>
-                <th>Extension</th>
-                <th>Added</th>
-                <th>Removed</th>
+                <th>File Extension</th>
+                <th>Lines Added</th>
+                <th>Lines Removed</th>
             </tr>
         </thead>
         <tbody>
@@ -424,23 +442,63 @@ This really isn't a fair comparison because >90% of that JSON comes from constan
     </table>
 </div>
 
-The _full_ picture is a lot less interesting because of the overwhelming amount of data input/output stuff or autogenerated files. This does take me back to some interesting experiments though, like when I was messing with dependency parsers (.conllu) or hand rolling BPE tokenization (.vocab). I also apparently can't make up my mind between `.log` and `.out` for log files.
+The full picture is a lot less interesting because of the massive amount of data input/output stuff and generated files. This does take me back to some interesting experiments though, like when I was messing around with dependency parses (.conllu) or novel tokenizers (.vocab). I also apparently can't make up my mind between `.log` and `.out` for logging.
 
-## What were my commits about?
+## Commit Poetry
 
-### Most Frequent Commit Message Tokens
+### Most Frequent Tokens
 
-| Type    | Count |
-| ------- | ----- |
-| fix     | 98    |
-| add     | 87    |
-| some    | 57    |
-| stuff   | 56    |
-| update  | 52    |
-| config  | 43    |
-| added   | 36    |
-| eval    | 35    |
-| updated | 35    |
-| init    | 34    |
+<div class="repo-table-container">
+    <table class="repo-table">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="repo-name">fix</td>
+                <td>98</td>
+            </tr>
+            <tr>
+                <td class="repo-name">add</td>
+                <td>87</td>
+            </tr>
+            <tr>
+                <td class="repo-name">some</td>
+                <td>57</td>
+            </tr>
+            <tr>
+                <td class="repo-name">stuff</td>
+                <td>56</td>
+            </tr>
+            <tr>
+                <td class="repo-name">update</td>
+                <td>52</td>
+            </tr>
+            <tr>
+                <td class="repo-name">config</td>
+                <td>43</td>
+            </tr>
+            <tr>
+                <td class="repo-name">added</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <td class="repo-name">eval</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td class="repo-name">updated</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td class="repo-name">init</td>
+                <td>34</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
-If I had been consistent with my tenses, then this chart would show that I *add* and *added* more than I *fixed*, thus proving that I am a good programmer after all. Apparently, I also did a lot of *stuff*. init    | 34    |
+If I had been more consistent with my tenses, then this table would show that I "add" and "added" more than I "fixed," thus proving that I _am_ a good programmer after all. Apparently, I also did a lot of "stuff" in 2024, which is good to finally know for sure.
