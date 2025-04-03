@@ -1,7 +1,7 @@
 ---
 title: Greener Pastures
 description: Greener Pastures
-pubDate: 2025-01-09 12:59
+pubDate: 2025-01-09 00:59
 ---
 
 I'm cautiously optimistic about a new research project I started this week. This doesn't mean I'm abandoning all my work from the past year, but I'm shifting my priorities while the line is still hot.
